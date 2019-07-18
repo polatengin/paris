@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main.keyboard {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+.keyboard .key {
+  flex: 1;
+  margin: 0 .1rem;
+  position: relative;
+}
+.keyboard .key .white {
+  background: linear-gradient(-30deg,#f8f8f8,#fff);
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff, 0 4px 3px rgba(0,0,0,.7), inset 0 -1px 0 #fff, inset 1px 0 0 #fff, inset -1px -1px 15px rgba(0,0,0,.5), -3px 4px 6px rgba(0,0,0,.5);
+  height: 100%;
+  position: relative;
+}
+.keyboard .key .white.active {
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff, 0 4px 3px rgba(0,0,0,.7), inset 0 -1px 0 #fff, inset 1px 0 0 #fff, inset -1px -1px 15px #000, -3px 4px 6px rgba(0,0,0,.5);
+  height: 99.6%;
+  position: relative;
+  top: -.4rem;
+}
+.keyboard .key .black {
+  background: linear-gradient(-20deg,#222,#000,#222);
+  border-width: .2rem .4rem 1.2rem;
+  border-style: solid;
+  border-color: #666 #222 #111 #555;
+  height: 60%;
+  left: 100%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+  width: 70%;
+  z-index: 1;
+}
+.keyboard .key .black.active {
+  border-bottom-width: .4rem;
+}
