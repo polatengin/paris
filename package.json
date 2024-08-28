@@ -21,7 +21,7 @@
     "tone": "13.8.19",
     "ts-loader": "6.0.4",
     "typescript": "3.5.3",
-    "webpack": "4.36.1",
+    "webpack": "5.94.0",
     "webpack-cli": "3.3.6"
   }
 }
